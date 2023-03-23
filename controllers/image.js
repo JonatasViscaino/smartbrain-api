@@ -1,6 +1,6 @@
 const returnClarifaiRequestOptions = (imageUrl) => {
   // Your PAT (Personal Access Token) can be found in the portal under Authentification
-  const PAT = '234250562bd64755a1abe637df5f970a';
+  const PATH = '234250562bd64755a1abe637df5f970a';
   // Specify the correct user_id/app_id pairings
   // Since you're making inferences outside your app's scope
   const USER_ID = 'jojo99';       
@@ -27,7 +27,7 @@ const returnClarifaiRequestOptions = (imageUrl) => {
 	  method: 'POST',
 	  headers: {
 	      'Accept': 'application/json',
-	      'Authorization': 'Key ' + PAT
+	      'Authorization': 'Key ' + PATH
 	  },
 	  body: raw
 	};
